@@ -4,7 +4,7 @@ import Layout from "./Components/Layout"
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Layout />
     </div>
   )

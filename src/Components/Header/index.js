@@ -1,28 +1,35 @@
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons"
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faFolder,
+} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import "./index.scss"
 
 function Header() {
   return (
-    <div className="header">
-      <header>
+    <header>
+      <div className="header">
         <nav>
-          <div className="nav1">
+          <ul>
+            {/* <li> */}
             <FontAwesomeIcon icon={faHome} />
-          </div>
-          <div className="nav1">
+            {/* </li> */}
+            {/* <li> */}
             <FontAwesomeIcon icon={faUser} />
-          </div>
-          <div className="nav1">
-            <FontAwesomeIcon icon={faUser} />
-          </div>
-          <div className="nav1">
+            {/* </li> */}
+            {/* <li> */}
+            <FontAwesomeIcon icon={faFolder} />
+            {/* </li> */}
+            {/* <li> */}
             <FontAwesomeIcon icon={faEnvelope} />
-          </div>
+            {/* </li> */}
+          </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }
 
