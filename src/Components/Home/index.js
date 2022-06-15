@@ -5,19 +5,17 @@ import "./index.scss"
 function Home() {
   return (
     <div className="home">
-      {/* <div className="left">
+      <div className="left">
         <div className="imgContainer">
-          <img src={me} alt="placeholder" />
+          {/* <img src={me} alt="placeholder" /> */}
         </div>
       </div>
       <div className="right">
         <div className="textContainer"></div>
-        <h2>Hello there, my name is</h2>
+        <h3>Hello there, my name is</h3>
         <h1>Olawale Ayejuyone</h1>
-        <h3>
-          I am more than a <span>Software Engineer</span>
-        </h3>
-      </div> */}
+        <h4>I am more than a Software Guy</h4>
+      </div>
     </div>
   )
 }
