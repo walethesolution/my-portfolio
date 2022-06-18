@@ -4,7 +4,7 @@ import "./index.scss"
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
           {/* <img src={me} alt="placeholder" /> */}
