@@ -3,8 +3,7 @@ import "./index.scss"
 function About() {
   return (
     <div className="about" id="about">
-      {" "}
-      About
+      <h1>Get to know me</h1>
     </div>
   )
 }

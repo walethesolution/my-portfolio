@@ -1,38 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Fascinate&family=Zen+Dots&display=swap");
 
 .home {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 
-  .left {
-    flex: 0.5;
-    overflow: hidden;
+  .textContainer {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    letter-spacing: 2px;
+    margin: 0;
+    max-height: 90%;
 
-    .imgContainer {
-      width: 700px;
-      height: 700px;
+    h1,
+    h2,
+    h4 {
+      overflow-y: hidden;
+      font-weight: 600px;
+    }
 
-      img {
-        height: 90%;
-        width: 100%;
-      }
+    h1 {
+      font-size: 60px;
+      font-family: "Fascinate", cursive;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: "Rubik Moonrocks", cursive;
+    }
+
+    h4 {
+      font-size: 19px;
+      letter-spacing: 3px;
     }
   }
+  .btn {
+    border: 2px solid #8b7f7f;
+    letter-spacing: 1px;
+    margin-top: 10px;
 
-  .right {
-    flex: 0.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // color: beige;
-    font-family: cursive;
-
-    // .textContainer {
-    // }
+    &:hover {
+      background-color: #fff;
+    }
   }
-}
-
-h1 {
-  font-size: 55px;
-  font-family: "Fascinate", cursive;
+  // }
 }
