@@ -1,3 +1,7 @@
+h1 {
+  overflow: hidden;
+}
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
@@ -7,62 +11,63 @@
     margin: 0;
 
     li {
+      width: 100%;
       padding: 0;
       margin: 0;
-      list-style: none;
-      margin-bottom: 10px;
-      overflow: hidden;
-      display: block;
-      position: relative;
-      opacity: 0;
-      animation: fadeInUp 2s 2s;
-      animation-fill-mode: forwards;
-      clear: both;
+      //   list-style: none;
+      //   margin-bottom: 10px;
+      //   overflow: hidden;
+      //   display: block;
+      //   position: relative;
+      //   opacity: 0;
+      //   animation: fadeInUp 2s 2s;
+      //   animation-fill-mode: forwards;
+      //   clear: both;
     }
 
-    li.form-half {
-      width: 49%;
-      margin-left: 2%;
-      float: left;
-      clear: none;
+    // li.form-half {
+    //   width: 49%;
+    //   margin-left: 2%;
+    //   float: left;
+    //   clear: none;
 
-      &:first-child {
-        margin: 0;
-      }
-    }
+    //   &:first-child {
+    //     margin: 0;
+    //   }
+    // }
   }
 
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    border: 0;
-    background-color: rgb(172, 156, 134);
-    height: 50px;
-    font-size: 17px;
-    color: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+  // input[type="text"],
+  // input[type="email"] {
+  //   width: 100%;
+  //   border: 0;
+  //   background-color: rgb(172, 156, 134);
+  //   height: 50px;
+  //   font-size: 17px;
+  //   color: #fff;
+  //   padding: 0 20px;
+  //   box-sizing: border-box;
+  // }
 
-  textarea {
-    width: 100%;
-    border: 0;
-    background: rgb(172, 156, 134);
-    height: 50px;
-    font-size: 17px;
-    color: #fff;
-    min-height: 150px;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+  // textarea {
+  //   width: 100%;
+  //   border: 0;
+  //   background: rgb(172, 156, 134);
+  //   height: 50px;
+  //   font-size: 17px;
+  //   color: #fff;
+  //   min-height: 150px;
+  //   padding: 0 20px;
+  //   box-sizing: border-box;
+  // }
 
-  .send-button {
-    color: #8b7f7f;
-    background: 0 0;
-    font: 11px;
-    letter-spacing: 2.8px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 2px solid #8b7f7f;
-  }
+  // .send-button {
+  //   color: #8b7f7f;
+  //   background: 0 0;
+  //   font: 11px;
+  //   letter-spacing: 2.8px;
+  //   text-decoration: none;
+  //   padding: 8px 10px;
+  //   border: 2px solid #8b7f7f;
+  // }
 }

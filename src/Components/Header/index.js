@@ -5,6 +5,7 @@ import {
   faFolder,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom"
 import React from "react"
 import "./index.scss"
 
@@ -26,24 +27,24 @@ function Header() {
         </div>
         <div className="right">
           <div className="nav">
-            <a href="#home">
+            <Link to="/">
               <FontAwesomeIcon icon={faHome} />
-            </a>
+            </Link>
           </div>
           <div className="nav">
-            <a href="#about">
+            <Link to="/about">
               <FontAwesomeIcon icon={faUser} />
-            </a>
+            </Link>
           </div>
           <div className="nav">
-            <a href="#project">
+            <Link to="/project">
               <FontAwesomeIcon icon={faFolder} />
-            </a>
+            </Link>
           </div>
           <div className="nav">
-            <a href="#contact">
+            <Link to="/contact">
               <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

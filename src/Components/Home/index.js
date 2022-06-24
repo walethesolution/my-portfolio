@@ -48,11 +48,11 @@ function Home() {
         </h2>
         <br></br>
         <h4>Software developer / Full Stack Engineer</h4>
-        <BrowserRouter>
+        <>
           <Link to="/contact" className="btn">
             CONTACT ME
           </Link>
-        </BrowserRouter>
+        </>
       </div>
     </div>
   )

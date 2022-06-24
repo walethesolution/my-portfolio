@@ -2,7 +2,7 @@ import "./index.scss"
 import { useState } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 
-const Contacts = () => {
+const Contact = () => {
   const [lettersClass, setLettersClass] = useState("text-animation")
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]
 
@@ -18,8 +18,11 @@ const Contacts = () => {
         </h1>
         <p>
           As a software enthusiast, I am interested in working on large projects
-          and in a thriving environment. If this sounds like your company, do
-          not hesitate to reach out to me using the form below
+          and in a thriving environment.
+        </p>
+        <p>
+          If this sounds like your company, do not hesitate to reach out to me
+          using the form below
         </p>
         <div className="contact-form">
           <form>
@@ -56,4 +59,4 @@ const Contacts = () => {
   )
 }
 
-export default Contacts
+export default Contact
