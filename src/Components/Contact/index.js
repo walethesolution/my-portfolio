@@ -7,8 +7,8 @@ const Contact = () => {
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]
 
   return (
-    <div className="contacts" id="contact">
-      <div className="textContainer ">
+    <div className=" contact" id="contact">
+      <div className="text-container ">
         <h1>
           <AnimatedLetters
             lettersClass={lettersClass}

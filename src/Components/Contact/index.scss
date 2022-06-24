@@ -1,7 +1,46 @@
-h1 {
-  overflow: hidden;
-}
+.text-container {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  vertical-align: middle;
+  // display: table-cell;
+  max-height: 90%;
 
+  h1 {
+    font-size: 50px;
+    font-family: "Fascinate", cursive;
+    color: #8b7f7f;
+    font-weight: 400px;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: 10px;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 13px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 350;
+    min-width: fit-content;
+    animation: pulse 1s;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.2s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 1.3s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 1.4s;
+    }
+  }
+}
 .contact-form {
   width: 100%;
   margin-top: 20px;

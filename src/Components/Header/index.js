@@ -20,10 +20,10 @@ function Header() {
     <div className="header">
       <div className="wrapper">
         <div className="left">
-          <a href="#home" className="logo">
+          <Link to="/" className="logo">
             waleTheSolution
             <div className="subLogo">Code | Life | People</div>
-          </a>
+          </Link>
         </div>
         <div className="right">
           <div className="nav">

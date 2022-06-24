@@ -1,6 +1,7 @@
 import React from "react"
 import "./index.scss"
 import Header from "../Header"
+import Footer from "../Footer"
 import Home from "../Home"
 import Project from "../Project"
 import About from "../About"
@@ -19,6 +20,7 @@ function Layout() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }
