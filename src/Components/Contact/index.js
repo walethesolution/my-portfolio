@@ -1,13 +1,37 @@
 import "./index.scss"
-import { useState } from "react"
+import { useState, useRef } from "react"
+import emailjs from "@emailjs/browser"
 import AnimatedLetters from "../AnimatedLetters"
 
 const Contact = () => {
+  const refForm = useRef()
+
+  const sendForm = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        refForm.current,
+        "tmk79fZLRKKgac7Wz"
+      )
+      .then(
+        () => {
+          alert("Message successfully sent!")
+          window.location.reload(false)
+        },
+        () => {
+          alert("Message failed, please try again")
+        }
+      )
+  }
+
   const [lettersClass, setLettersClass] = useState("text-animation")
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]
 
   return (
-    <div className=" contact" id="contact">
+    <div className="contact">
       <div className="text-container ">
         <h1>
           <AnimatedLetters
@@ -25,7 +49,7 @@ const Contact = () => {
           using the form below
         </p>
         <div className="contact-form">
-          <form>
+          <form ref={refForm} onSubmit={sendForm}>
             <ul>
               <li className="form-half">
                 <input type="text" name="name" placeholder="Name" required />

@@ -11,7 +11,7 @@
   h1 {
     font-size: 50px;
     font-family: "Fascinate", cursive;
-    color: #8b7f7f;
+    color: #000;
     font-weight: 400px;
     margin-top: 0;
     position: relative;
@@ -21,7 +21,7 @@
   }
 
   p {
-    font-size: 13px;
+    // font-size: 25px;
     color: #000;
     font-family: sans-serif;
     font-weight: 350;
@@ -38,6 +38,11 @@
 
     &:nth-of-type(3) {
       animation-delay: 1.4s;
+      margin-bottom: 50px;
     }
   }
 }
+
+// h1 {
+//   color: #000;
+// }

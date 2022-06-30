@@ -1,3 +1,93 @@
 .project {
-  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container {
+    position: absolute;
+    left: 35%;
+    top: 30px;
+    // transform: translateY(-50%);
+    // width: 35%;
+    // vertical-align: middle;
+    // display: table-cell;
+    // max-height: 90%;
+
+    h1 {
+      font-size: 50px;
+      font-family: "Fascinate", cursive;
+      color: #8b7f7f;
+      font-weight: 400px;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: 10px;
+      overflow: hidden;
+    }
+
+    ul {
+      margin: 10px;
+      padding: 0;
+      display: flex;
+      list-style: none;
+
+      li {
+        font-size: 14px;
+        margin-right: 50px;
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &.active {
+          background-color: rgb(139, 47, 139);
+          border: 1px solid rgb(21, 17, 21);
+          color: white;
+        }
+      }
+    }
+
+    .project-container {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .item {
+        width: 220px;
+        height: 150px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 2%;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.6s ease;
+        // opacity: 0;
+        animation: fadeInUp 3s 2s;
+        animation-fill-mode: forwards;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgb(21, 17, 21);
+          z-index: 1;
+        }
+
+        &:hover {
+          background-color: rgb(139, 47, 139);
+          img {
+            opacity: 0.2;
+            z-index: 0;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          position: absolute;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }
