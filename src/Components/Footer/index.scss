@@ -22,10 +22,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        overflow: hidden;
 
         li {
           overflow: hidden;
           font-size: 30px;
+          opacity: 0;
+          animation: fadeInUp 2s 1s;
+          animation-fill-mode: forwards;
 
           a {
             margin-left: 15px;

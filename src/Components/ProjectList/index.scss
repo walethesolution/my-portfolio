@@ -1,0 +1,22 @@
+.project-container {
+  font-size: 17px;
+  margin-right: 50px;
+  font-weight: Bold;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInUp 2s 1s;
+  animation-fill-mode: forwards;
+
+  &:hover {
+    background-color: white;
+    color: rgb(139, 47, 139);
+  }
+
+  &.active {
+    background-color: rgb(139, 47, 139);
+    border: 1px solid rgb(21, 17, 21);
+    color: white;
+  }
+}
