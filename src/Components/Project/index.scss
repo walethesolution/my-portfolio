@@ -46,7 +46,7 @@
       cursor: pointer;
       transition: all 0.6s ease;
       opacity: 0;
-      animation: fadeInUp 2s 2s;
+      animation: fadeInUp 2s 1s;
       animation-fill-mode: forwards;
       overflow: hidden;
 
@@ -63,7 +63,7 @@
         z-index: 1;
       }
       &:hover {
-        background-color: rgb(139, 47, 139);
+        background-color: #c9b294;
         color: white;
         img {
           opacity: 0.2;

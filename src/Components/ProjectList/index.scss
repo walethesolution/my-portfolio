@@ -1,4 +1,4 @@
-.project-container {
+li {
   font-size: 17px;
   margin-right: 50px;
   font-weight: Bold;
@@ -10,13 +10,13 @@
   animation-fill-mode: forwards;
 
   &:hover {
-    background-color: white;
-    color: rgb(139, 47, 139);
+    // background-color: white;
+    color: #c9b294;
   }
 
   &.active {
-    background-color: rgb(139, 47, 139);
-    border: 1px solid rgb(21, 17, 21);
+    background-color: #c9b294;
+    // border: 1px solid rgb(21, 17, 21);
     color: white;
   }
 }

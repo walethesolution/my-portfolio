@@ -56,21 +56,27 @@ function Project() {
           />
         ))}
       </ul>
-      {/* <p>
-        These are some projects i built in bootcamp using React for the
-        frontend.
-      </p> */}
       <div className="project-container">
-        {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="home page of flashcard" />
-            <h3>{d.title}</h3>
-          </div>
+        {list.map(
+          (item) =>
+            item.id === "bootcamp"
+              ? data.map((d) => (
+                  <div className="item">
+                    <img
+                      src={
+                        d.id === 1 ? d.img["flashcard"] : d.img["restaurant"]
+                      }
+                      alt="home page of app"
+                    />
+                    <h3>{d.title}</h3>
+                  </div>
+                ))
+              : null
           // <div className="item">
-          //   <img src={restaurant} alt="home page of restaurant site" />
+          //   <img src={d.img["flashcard"]} alt="home page of flashcard" />
           //   <h3>Periodic Tables</h3>
           // </div>
-        ))}
+        )}
       </div>
     </div>
   )

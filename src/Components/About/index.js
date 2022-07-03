@@ -17,26 +17,23 @@ function About() {
           </strong>
         </h1>
         <p>
-          I’m a passionate individual that’s captivated by how things work. I
-          recall my first encounter in high school back in Nigeria with the
-          Google search engine and I was amazed at how you can search and ask
-          questions with a phone and the internet and get the most accurate
-          answer within seconds. Ever since that discovery, my curiosity, and
-          passion for understanding how software can improve our lives have led
-          to pursuing my career goal of becoming a software developer.
+          I’m a passionate individual that’s captivated by how things work. My
+          great discovery of software happened in high school back in Nigeria. I
+          witnessed a simple google search that changed everything as it created
+          this curiosity and passion for understanding how software can improve
+          our lives. This has ultimately led to pursuing my career goal of
+          becoming a software engineer.
         </p>
         <p>
-          Migrating to the United States has truly been a blessing as I have
-          completed a Certificate Program in software engineering where I have
-          learned to build User Interfaces, Create Application Programming
-          Interfaces, and Construct databases and daily I also get the chance to
-          daily improve on my software journey
+          Migrating to the US has been a blessing as I have completed a
+          Certificate Program in software engineering where I have learned to
+          build User Interfaces, Create Application Programming Interfaces, and
+          Construct databases.
         </p>
         <p>
-          If I had to drop some facts about myself they will include: I’m that
-          guy that can learn anything if given a reasonable time for its
-          completion, I’m that lofty dreamer that wants to win the Uefa
-          champions league one day.
+          Some <strong>facts</strong> about me include: I can learn anything if
+          given reasonable time for its completion, I’m that lofty dreamer that
+          wants to win the UEFA champions league one day.
         </p>
       </div>
     </div>
