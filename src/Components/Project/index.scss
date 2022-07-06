@@ -1,9 +1,14 @@
+@import "../../global.scss";
 .container {
   display: flex;
+
   flex-direction: column;
   align-items: center;
   position: relative;
   top: 40px;
+  @include mobile {
+    top: 20px;
+  }
 
   h1 {
     font-size: 50px;
@@ -15,6 +20,12 @@
     margin-bottom: 40px;
     left: 10px;
     overflow: hidden;
+
+    @include mobile {
+      font-size: 30px;
+      // display: block;
+      // overflow: hidden;
+    }
   }
 
   ul {
@@ -23,6 +34,11 @@
     list-style: none;
     display: flex;
     overflow: hidden;
+
+    @include mobile {
+      margin: 4px 7px;
+      font-size: 16px;
+    }
   }
 
   .project-container {
@@ -33,6 +49,10 @@
     flex-wrap: wrap;
     margin-top: 10px;
     overflow: hidden;
+
+    @include mobile {
+      margin-top: 5px;
+    }
 
     .item {
       width: 280px;
@@ -50,10 +70,19 @@
       animation-fill-mode: forwards;
       overflow: hidden;
 
+      @include mobile {
+        width: 180px;
+        height: 120px;
+      }
+
       h3 {
         position: absolute;
         font-size: 20px;
         overflow: hidden;
+
+        @include mobile {
+          font-size: 15px;
+        }
       }
 
       img {

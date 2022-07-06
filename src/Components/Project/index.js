@@ -56,6 +56,7 @@ function Project() {
           />
         ))}
       </ul>
+
       <div className="project-container">
         {list.map(
           (item) =>

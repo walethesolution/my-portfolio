@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .header {
   width: 100%;
   height: 70px;
@@ -13,6 +15,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile {
+      padding: 15px 15px;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -24,12 +30,20 @@
         color: #000;
         font-family: "Fascinate", cursive;
 
+        @include mobile {
+          font-size: inherit;
+        }
+
         .subLogo {
           font-size: 12px;
           font-weight: bold;
           margin-left: 25%;
           font-family: cursive;
           color: rgb(40, 29, 29);
+
+          @include mobile {
+            font-size: 9px;
+          }
         }
       }
     }
@@ -39,6 +53,10 @@
 
       .nav {
         margin-right: 20px;
+
+        @include mobile {
+          margin-right: 13px;
+        }
 
         a {
           text-decoration: none;

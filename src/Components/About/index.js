@@ -31,9 +31,9 @@ function About() {
           Construct databases.
         </p>
         <p>
-          Some <strong>facts</strong> about me include: I can learn anything if
-          given reasonable time for its completion, I’m that lofty dreamer that
-          wants to win the UEFA champions league one day.
+          Some <strong>facts</strong> about me: I can learn anything if given
+          reasonable time for its completion, I’m that lofty dreamer that wants
+          to win the UEFA champions league one day.
         </p>
       </div>
     </div>
