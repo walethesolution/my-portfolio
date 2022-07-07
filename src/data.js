@@ -1,5 +1,7 @@
 import restaurant from "./Images/restaurant.png"
 import flashcard from "./Images/flashcard.png"
+import godsLeague from "./Images/godsLeague.png"
+import sixP from "./Images/sixP.png"
 
 export const bootcampProjects = [
   {
@@ -18,11 +20,11 @@ export const ideaProjects = [
   {
     id: 1,
     title: "Coming soon",
-    img: "six-P",
+    img: { godsLeague: godsLeague },
   },
   {
     id: 2,
     title: "Coming soon",
-    img: "gods league",
+    img: { sixP: sixP },
   },
 ]
