@@ -58,26 +58,19 @@ function Project() {
       </ul>
 
       <div className="project-container">
-        {
-          data.map((d) => (
-            <div className="item">
-              <img
-                src={
-                  d.id === 1
-                    ? d.img["flashcard"] || d.img["godsLeague"]
-                    : d.img["restaurant"] || d.img["sixP"]
-                }
-                alt="home page of app"
-              />
-              <h3>{d.title}</h3>
-            </div>
-          ))
-
-          // <div className="item">
-          //   <img src={d.img["flashcard"]} alt="home page of flashcard" />
-          //   <h3>Periodic Tables</h3>
-          // </div>
-        }
+        {data.map((d) => (
+          <div className="item">
+            <img
+              src={
+                d.id === 1
+                  ? d.img["flashcard"] || d.img["godsLeague"]
+                  : d.img["restaurant"] || d.img["sixP"]
+              }
+              alt="home page of app"
+            />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   )

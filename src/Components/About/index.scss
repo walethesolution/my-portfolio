@@ -5,9 +5,6 @@
 
   @include mobile {
     flex-direction: column;
-    // width: 100%;
-    // position: relative;
-    // max-height: 100%;
   }
 
   .text-container {
@@ -17,33 +14,29 @@
     transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
-    // display: table-cell;
     max-height: 90%;
+    overflow: hidden;
 
     @include mobile {
       width: 95%;
       left: 0;
       padding: 10px 10px;
-      // position: relative;
-      // max-height: 100%;
     }
 
     h1 {
       font-size: 50px;
       font-family: "Fascinate", cursive;
-      // color: #000;
       font-weight: 400px;
       margin-top: 0;
       position: relative;
       margin-bottom: 40px;
       left: 10px;
       overflow: hidden;
+      color: #8b7f7f;
 
       @include mobile {
         font-size: 30px;
-        // display: block;
         justify-content: center;
-        // overflow: hidden;
       }
     }
 
@@ -60,10 +53,7 @@
         color: #000;
         font-family: sans-serif;
         font-weight: 350;
-        // min-width: fit-content;
         animation: pulse 1s;
-        // display: flex;
-        // flex-wrap: wrap;
       }
 
       &:nth-of-type(1) {
@@ -80,8 +70,96 @@
       }
     }
   }
-}
+  .all-cubes {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 10%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
 
-// h1 {
-//   color: #000;
-// }
+    @include mobile {
+      display: flex;
+      top: 70%;
+      right: 50%;
+    }
+  }
+
+  .spin-cubes {
+    animation-name: cubespinner;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    @include mobile {
+      animation-name: none;
+    }
+
+    div {
+      // position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 1px solid yellow;
+      // background-color: rgba(255, 255, 255, 0.5);
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px #c9b294;
+
+      @include mobile {
+        // width: 100%;
+        font-size: 17px;
+        border: none;
+        box-shadow: 0 0 0px 0px;
+        padding-right: 50%;
+      }
+    }
+
+    .cube1 {
+      transform: rotateZ(100px);
+    }
+    .cube2 {
+      transform: rotateY(90deg) rotateZ(100px);
+    }
+    .cube3 {
+      transform: rotateY(90deg) rotateX(90deg) rotateZ(100px);
+    }
+    .cube4 {
+      transform: rotateY(180deg) rotateZ(90deg) rotateZ(100px);
+    }
+    .cube5 {
+      transform: rotateY(-90deg) rotateZ(90deg) rotateZ(100px);
+    }
+    .cube6 {
+      transform: rotateX(-90deg) rotateZ(100px);
+    }
+  }
+
+  @keyframes cubespinner {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg) rotateZ(90deg);
+    }
+  }
+}

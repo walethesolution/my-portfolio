@@ -46,7 +46,7 @@ function Footer() {
           <span>
             <FontAwesomeIcon icon={faCopyright} />
           </span>
-          <p>Copyright. 2022 All rights reserved. </p>
+          <p>Copyright. 2022 Olawale Ayejuyone.</p>
         </div>
       </div>
     </div>
