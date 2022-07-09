@@ -8,11 +8,13 @@ export const bootcampProjects = [
     id: 1,
     title: "Flashcard-o-matic",
     img: { flashcard: flashcard },
+    url: "https://github.com/walethesolution/Flashcard-App",
   },
   {
     id: 2,
     title: "Periodic Tables",
     img: { restaurant: restaurant },
+    url: "https://restaurant-v1-frontend.herokuapp.com/",
   },
 ]
 

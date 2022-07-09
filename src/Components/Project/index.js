@@ -59,16 +59,21 @@ function Project() {
 
       <div className="project-container">
         {data.map((d) => (
-          <div className="item">
-            <img
-              src={
-                d.id === 1
-                  ? d.img["flashcard"] || d.img["godsLeague"]
-                  : d.img["restaurant"] || d.img["sixP"]
-              }
-              alt="home page of app"
-            />
-            <h3>{d.title}</h3>
+          <div className="project-items">
+            <div className="item">
+              <img
+                src={
+                  d.id === 1
+                    ? d.img["flashcard"] || d.img["godsLeague"]
+                    : d.img["restaurant"] || d.img["sixP"]
+                }
+                alt="home page of app"
+              />
+              <h3>{d.title}</h3>
+            </div>
+            <button className="btn" onClick={() => window.open(d.url)}>
+              View
+            </button>
           </div>
         ))}
       </div>

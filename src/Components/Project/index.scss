@@ -102,3 +102,17 @@
     }
   }
 }
+.project-items {
+  overflow: hidden;
+
+  button {
+    animation: fadeInUp 3s 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-right: 20px;
+    float: right;
+    border: 1px solid #8b7f7f;
+    color: #fff;
+    background-color: #c9b294;
+  }
+}
