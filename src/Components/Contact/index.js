@@ -2,8 +2,6 @@ import "./index.scss"
 import { useState, useRef } from "react"
 import emailjs from "@emailjs/browser"
 import AnimatedLetters from "../AnimatedLetters"
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
 
 const Contact = () => {
   const refForm = useRef()
@@ -81,25 +79,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      {/* <div className="map-info">
-        Olawale Ayejuyone
-        <br />
-        Brooklyn, New York
-        <br />
-        USA
-        <br />
-        <span>Olawaleayejuyone@gmail.com</span>
-      </div> */}
-      {/* <div className="map-wrapper">
-        <MapContainer center={[40.6101, 73.9201]} zoom={13}>
-          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <Marker position={[40.6101, 73.9201]}>
-            <Popup>
-              Olawale lives around here, stop by for a chat and cup of coffee.
-            </Popup>
-          </Marker>
-        </MapContainer>
-      </div> */}
     </div>
   )
 }
