@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react build --output public",
+    "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject"
   },
