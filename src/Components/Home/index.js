@@ -1,11 +1,10 @@
 import React from "react"
-import { useState, useEffect } from "react"
-import { Link, BrowserRouter } from "react-router-dom"
+import { Link } from "react-router-dom"
 import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
 
 function Home() {
-  const [lettersClass, setLettersClass] = useState("text-animation")
+  const lettersClass = "text-animation"
   const nameArray = [
     "O",
     "l",
@@ -25,12 +24,6 @@ function Home() {
     "n",
     "e",
   ]
-
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLettersClass("text-animation-hover")
-  //   }, 4000)
-  // }, [])
 
   return (
     <div className="home" id="home">

@@ -1,13 +1,12 @@
 import "./index.scss"
 import { useEffect, useState } from "react"
-// import flashcard from "../../Images/flashcard.png"
-// import restaurant from "../../Images/restaurant.png"
 import AnimatedLetters from "../AnimatedLetters"
 import ProjectList from "../ProjectList"
 import { bootcampProjects, ideaProjects } from "../../data"
 
 function Project() {
-  const [lettersClass, setLettersClass] = useState("text-animation")
+  const lettersClass = "text-animation"
+
   const [selected, setSelected] = useState("featured")
   const [data, setData] = useState([])
   const projectArray = ["P", "r", "o", "j", "e", "c", "t", "s"]

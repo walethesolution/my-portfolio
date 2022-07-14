@@ -1,5 +1,5 @@
 import "./index.scss"
-import { useState, useRef } from "react"
+import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import AnimatedLetters from "../AnimatedLetters"
 
@@ -27,7 +27,8 @@ const Contact = () => {
       )
   }
 
-  const [lettersClass, setLettersClass] = useState("text-animation")
+  const lettersClass = "text-animation"
+
   const contactArray = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"]
 
   return (

@@ -1,5 +1,4 @@
 import AnimatedLetters from "../AnimatedLetters"
-import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./index.scss"
 import {
@@ -12,7 +11,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 function About() {
-  const [lettersClass, setLettersClass] = useState("text-animation")
+  const lettersClass = "text-animation"
+
   return (
     <div className=" about">
       <div className="text-container">
