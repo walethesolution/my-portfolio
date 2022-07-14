@@ -8,14 +8,14 @@ import { bootcampProjects, ideaProjects } from "../../data"
 
 function Project() {
   const [lettersClass, setLettersClass] = useState("text-animation")
-  const [selected, setSelected] = useState("bootcamp")
+  const [selected, setSelected] = useState("featured")
   const [data, setData] = useState([])
   const projectArray = ["P", "r", "o", "j", "e", "c", "t", "s"]
 
   const list = [
     {
-      id: "bootcamp",
-      title: "Bootcamp",
+      id: "featured",
+      title: "Featured",
     },
     {
       id: "idea",
@@ -25,7 +25,7 @@ function Project() {
 
   useEffect(() => {
     switch (selected) {
-      case "bootcamp":
+      case "featured":
         setData(bootcampProjects)
         break
       case "idea":

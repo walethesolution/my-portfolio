@@ -41,8 +41,8 @@ const Contact = () => {
           />
         </h1>
         <p>
-          As a software enthusiast, I am interested in working on large projects
-          and in a thriving environment.
+          As a software enthusiast, I am interested in working on projects that
+          will make me a better programmer and also a thriving environment.
         </p>
         <p>
           If this sounds like your company, do not hesitate to reach out to me
