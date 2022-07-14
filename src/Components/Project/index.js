@@ -70,6 +70,7 @@ function Project() {
                 alt="home page of app"
               />
               <h3>{d.title}</h3>
+              <h4>{d.desc}</h4>
             </div>
             <button className="btn" onClick={() => window.open(d.url)}>
               View
