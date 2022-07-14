@@ -8,6 +8,11 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 
+  @include mobile {
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+
   .textContainer {
     position: absolute;
     left: 15%;
