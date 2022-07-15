@@ -14,7 +14,7 @@ function About() {
   const lettersClass = "text-animation"
 
   return (
-    <div className=" about">
+    <div className="about">
       <div className="text-container">
         <h1>
           <strong>
