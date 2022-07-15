@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom"
 
 function Layout() {
   return (
-    <div className="layout lay-container">
+    <div className="layout">
       <Header />
       <div className="group">
         <Routes>
