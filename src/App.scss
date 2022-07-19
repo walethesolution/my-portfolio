@@ -1,6 +1,14 @@
 // $primary-color: black;
 
 @import "animate.css";
+@import "./global.scss";
+
+.app {
+  @include bigScreen {
+    width: 100%;
+    height: 100%;
+  }
+}
 // @import "~bootstrap/scss/bootstrap";
 // .app {
 //   overflow-x: hidden;
