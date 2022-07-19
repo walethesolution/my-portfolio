@@ -9,12 +9,7 @@
   overflow: hidden;
 
   @include mobile {
-    display: inline-block;
     opacity: 1;
-    animation: bounceIn 1s 1s;
-    animation-fill-mode: forwards;
-    min-width: 10px;
-    overflow: hidden;
   }
 }
 
