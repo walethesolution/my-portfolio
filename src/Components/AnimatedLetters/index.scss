@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .text-animation {
   display: inline-block;
   opacity: 0;
@@ -5,6 +7,15 @@
   animation-fill-mode: forwards;
   min-width: 10px;
   overflow: hidden;
+
+  @include mobile {
+    display: inline-block;
+    opacity: 1;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    overflow: hidden;
+  }
 }
 
 .text-animation-hover {
