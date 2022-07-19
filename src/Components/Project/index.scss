@@ -1,16 +1,11 @@
 @import "../../global.scss";
+
 .container {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   position: relative;
   top: 40px;
-
-  @include bigScreen {
-    // position: absolute;
-    // top: 0;
-  }
 
   @include mobile {
     top: 20px;
@@ -29,8 +24,6 @@
 
     @include mobile {
       font-size: 30px;
-      // display: block;
-      // overflow: hidden;
     }
   }
 
@@ -56,10 +49,6 @@
     margin-top: 10px;
     overflow: hidden;
 
-    @include bigScreen {
-      // overflow: auto;
-    }
-
     @include mobile {
       margin-top: 5px;
     }
@@ -79,13 +68,6 @@
       animation: fadeInUp 2s 1s;
       animation-fill-mode: forwards;
       overflow: hidden;
-
-      @include bigScreen {
-        // flex-direction: column;
-        width: 700px;
-        height: 350px;
-        // overflow: visible;
-      }
 
       @include mobile {
         width: 180px;
@@ -114,7 +96,6 @@
         justify-content: center;
         left: 5%;
         right: 5%;
-        // color: #000;
 
         @include mobile {
           font-size: 5px;
@@ -125,11 +106,6 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-
-        @include bigScreen {
-          // width: px;
-          // height: 200px;
-        }
       }
 
       &:hover {

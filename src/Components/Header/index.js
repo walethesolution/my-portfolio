@@ -10,12 +10,6 @@ import React from "react"
 import "./index.scss"
 
 function Header() {
-  // let history = useHistory()
-
-  // function GoHome() {
-  //   history.push("/home")
-  // }
-
   return (
     <div className="header">
       <div className="wrapper">

@@ -101,7 +101,6 @@
     }
 
     div {
-      // position: absolute;
       width: 60px;
       height: 60px;
       border: 1px solid rgb(192, 177, 95, 0.5);
@@ -112,7 +111,6 @@
       box-shadow: 0 0 20px 0px #c9b294;
 
       @include mobile {
-        // width: 100%;
         font-size: 17px;
         border: none;
         box-shadow: 0 0 0px 0px;

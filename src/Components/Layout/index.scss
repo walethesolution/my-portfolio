@@ -15,29 +15,5 @@
     &::-webkit-scrollbar {
       display: none;
     }
-
-    //   @include bigScreen {
-    //     // height: 100%;
-    //   }
-
-    //   > * {
-    //     width: 100vw;
-    //     height: calc(100vh - 70px);
-    //     scroll-snap-align: start;
-    //   }
   }
 }
-
-// .lay-container {
-//   width: 100%;
-//   // will-change: contents;
-//   // height: 90%;
-//   // min-height: 565px;
-//   position: relative;
-//   // top: 2%;
-//   margin: 0 auto;
-//   // z-index: 1;
-// transform-style: preserve-3d;
-// animation: fadeIn 1s forwards;
-// animation: delay 1s;
-// }

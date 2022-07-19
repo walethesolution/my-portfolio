@@ -76,7 +76,6 @@ function About() {
             <FontAwesomeIcon icon={faNodeJs} color="#000" />
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   )
