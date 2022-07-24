@@ -88,16 +88,17 @@
   }
 
   .spin-cubes {
-    animation-name: cubespinner;
+    opacity: 0;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
 
     @include mobile {
       animation-name: none;
+      opacity: 1;
     }
 
     div {
@@ -116,47 +117,6 @@
         box-shadow: 0 0 0px 0px;
         padding-right: 50%;
       }
-    }
-
-    .cube1 {
-      transform: rotateZ(100px);
-    }
-    .cube2 {
-      transform: rotateY(90deg) rotateZ(100px);
-    }
-    .cube3 {
-      transform: rotateY(90deg) rotateX(90deg) rotateZ(100px);
-    }
-    .cube4 {
-      transform: rotateY(180deg) rotateZ(90deg) rotateZ(100px);
-    }
-    .cube5 {
-      transform: rotateY(-90deg) rotateZ(90deg) rotateZ(100px);
-    }
-    .cube6 {
-      transform: rotateX(-90deg) rotateZ(100px);
-    }
-  }
-
-  @keyframes cubespinner {
-    from,
-    to {
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    16% {
-      transform: rotateY(-90deg);
-    }
-    33% {
-      transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    50% {
-      transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    66% {
-      transform: rotateY(-270deg) rotateX(90deg);
-    }
-    83% {
-      transform: rotateX(90deg) rotateZ(90deg);
     }
   }
 }
