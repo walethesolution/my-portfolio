@@ -1,16 +1,16 @@
 @import "../../global.scss";
 
 .contact {
-  // display: flex;
   @include mobile {
     flex-direction: column;
   }
 
   .text-container {
+    overflow-y: hidden;
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-53%);
     width: 35%;
     vertical-align: middle;
     // display: table-cell;

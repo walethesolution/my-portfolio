@@ -46,8 +46,8 @@ const Contact = () => {
           will make me a better programmer and also a thriving environment.
         </p>
         <p>
-          If this sounds like your company, do not hesitate to reach out to me
-          using the form below
+          If this sounds like you, do not hesitate to reach out to me using the
+          form below
         </p>
         <div className="contact-form">
           <form ref={refForm} onSubmit={sendForm}>
