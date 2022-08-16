@@ -51,70 +51,14 @@
     .right {
       display: flex;
 
-      .nav {
-        margin-right: 25px;
+      .headerMenu {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 20px;
+        font-weight: bold;
 
         @include mobile {
-          margin-right: 13px;
-        }
-
-        a {
-          text-decoration: none;
-          color: #000;
-
-          i {
-            transition: all 0.3s ease-out;
-          }
-
-          &:hover {
-            color: #54350b;
-
-            svg {
-              opacity: 0;
-            }
-
-            &:after {
-              opacity: 1;
-            }
-          }
-
-          &:after {
-            content: "";
-            font-size: 9px;
-            letter-spacing: 2px;
-            position: absolute;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            text-align: center;
-            opacity: 0;
-            // -webkit-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-          }
-
-          &:first-child {
-            &::after {
-              content: "HOME";
-            }
-          }
-          // }
-          a.about {
-            &:after {
-              content: "ABOUT";
-            }
-          }
-
-          a.contact {
-            &:after {
-              content: "CONTACT";
-            }
-          }
-
-          a.active {
-            svg {
-              color: #000;
-            }
-          }
+          margin-right: 15px;
         }
       }
     }
