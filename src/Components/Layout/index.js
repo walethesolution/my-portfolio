@@ -11,11 +11,11 @@ import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
 
 function Layout() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false)
   return (
     <div className="layout">
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
       <div className="group">
         <Routes>

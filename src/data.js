@@ -13,9 +13,9 @@ export const bootcampProjects = [
   },
   {
     id: 2,
-    title: "Periodic Tables",
+    title: "YKY restaurant",
     img: { restaurant: restaurant },
-    url: "https://restaurant-v1-frontend.herokuapp.com/",
+    url: "https://restaurant-v1-frontend.herokuapp.com/dashboard",
     desc: "This is the final capstone for my bootcamp. This full-stack application was built using React on the client and Node.js and Express for the API, and PostgreSQL for your database.",
   },
 ]

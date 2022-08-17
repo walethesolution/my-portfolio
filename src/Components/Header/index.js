@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 import React from "react"
 import "./index.scss"
 
-function Header({ menuOpen, setMenuOpen }) {
+function Header({ openMenu, setOpenMenu }) {
   return (
-    <div className={"header " + (menuOpen && "active")}>
+    <div className={"header " + (openMenu && "active")}>
       <div className="wrapper">
         <div className="left">
           <Link to="/" className="logo">
@@ -13,8 +13,7 @@ function Header({ menuOpen, setMenuOpen }) {
           </Link>
         </div>
         <div className="right">
-          <div className="headerMenu" onClick={() => setMenuOpen(!menuOpen)}>
-            {/* <a href="#">MENU</a> */}
+          <div className="headerMenu" onClick={() => setOpenMenu(!openMenu)}>
             MENU
           </div>
         </div>
