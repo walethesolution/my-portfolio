@@ -1,6 +1,6 @@
 import restaurant from "./Images/restaurant.png"
 import flashcard from "./Images/flashcard.png"
-import godsLeague from "./Images/godsLeague.png"
+import SBL from "./Images/SBL.png"
 import sixP from "./Images/sixP.png"
 
 export const bootcampProjects = [
@@ -25,8 +25,9 @@ export const ideaProjects = [
   {
     id: 1,
     title: "Coming soon",
-    img: { godsLeague: godsLeague },
-    desc: "This is the web application for the upcoming godsLeague, date TBA.",
+    img: { sbl: SBL },
+    url: "https://github.com/walethesolution/SBL",
+    desc: "This is the web application for the on-going basketball league (Sunday Balling League) for my community, hosted by me.\n Release date: Jan 14, 2023",
   },
   {
     id: 2,

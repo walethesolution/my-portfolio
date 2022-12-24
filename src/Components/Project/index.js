@@ -65,7 +65,7 @@ function Project() {
               <img
                 src={
                   d.id === 1
-                    ? d.img["flashcard"] || d.img["godsLeague"]
+                    ? d.img["flashcard"] || d.img["sbl"]
                     : d.img["restaurant"] || d.img["sixP"]
                 }
                 alt="home page of app"

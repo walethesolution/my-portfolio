@@ -50,10 +50,7 @@ const Contact = () => {
           complex technical challenges. I am excited to join a team where I can
           make a meaningful contribution and continue to grow as a developer..
         </p>
-        <p>
-          If this sounds like you, do not hesitate to reach out to me using the
-          form below
-        </p>
+        <p>For quicker response, reach out to me using the form below</p>
         <div className="contact-form">
           <form ref={refForm} onSubmit={sendForm}>
             <ul>
@@ -74,6 +71,7 @@ const Contact = () => {
               <li>
                 <textarea
                   placeholder="Message"
+                  s
                   name="message"
                   required
                 ></textarea>
