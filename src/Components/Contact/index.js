@@ -42,8 +42,13 @@ const Contact = () => {
           />
         </h1>
         <p>
-          As a software enthusiast, I am interested in working on projects that
-          will make me a better programmer and also a thriving environment.
+          I am actively seeking a full stack engineer position where I can
+          utilize my skills in HTML, CSS, JavaScript, React, and NodeJs to build
+          and deploy web applications. My experience working on a variety of
+          projects, from small startups to large enterprises, has given me a
+          strong foundation in full stack development and a passion for solving
+          complex technical challenges. I am excited to join a team where I can
+          make a meaningful contribution and continue to grow as a developer..
         </p>
         <p>
           If this sounds like you, do not hesitate to reach out to me using the
