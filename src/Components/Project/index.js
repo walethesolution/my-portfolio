@@ -4,11 +4,7 @@ import AnimatedLetters from "../AnimatedLetters"
 import ProjectList from "../ProjectList"
 import { bootcampProjects, ideaProjects } from "../../data"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 function Project() {
   const lettersClass = "text-animation"
