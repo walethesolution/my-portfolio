@@ -6,22 +6,18 @@
   }
 
   .text-container {
-    overflow-y: hidden;
+    overflow-y: scroll;
     position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translateY(-53%);
-    width: 35%;
-    vertical-align: middle;
-    // display: table-cell;
+    left: 10%;
+    // top: 50%;
+    // transform: translateY(-53%);
+    width: 50%;
     max-height: 90%;
 
     @include mobile {
       width: 100%;
       left: 0;
       padding: 10px 10px;
-      // position: relative;
-      // max-height: 100%;
     }
 
     h1 {
@@ -149,7 +145,7 @@
     .send-button {
       color: #8b7f7f;
       background: 0 0;
-      font: 11px;
+      font-size: 11px;
       letter-spacing: 2.8px;
       text-decoration: none;
       padding: 8px 10px;

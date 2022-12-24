@@ -3,6 +3,12 @@ import { useEffect, useState } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 import ProjectList from "../ProjectList"
 import { bootcampProjects, ideaProjects } from "../../data"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 function Project() {
   const lettersClass = "text-animation"
@@ -72,7 +78,13 @@ function Project() {
               <h4>{d.desc}</h4>
             </div>
             <button className="btn" onClick={() => window.open(d.url)}>
-              View
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/walethesolution"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </button>
           </div>
         ))}
