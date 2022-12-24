@@ -65,8 +65,8 @@ function Project() {
               <img
                 src={
                   d.id === 1
-                    ? d.img["restaurant"] || d.img["godsLeague"]
-                    : d.img["flashcard"] || d.img["sixP"]
+                    ? d.img["flashcard"] || d.img["godsLeague"]
+                    : d.img["restaurant"] || d.img["sixP"]
                 }
                 alt="home page of app"
               />
@@ -74,13 +74,7 @@ function Project() {
               <h4>{d.desc}</h4>
             </div>
             <button className="btn" onClick={() => window.open(d.url)}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/walethesolution"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
+              <FontAwesomeIcon icon={faGithub} />
             </button>
           </div>
         ))}
